@@ -1,6 +1,6 @@
-## PWC-customers-retention-dashboard
+# PWC-customers-retention-dashboard
 
-# Table of Content:
+## Table of Content:
 + Problem Statement
 + Data Source
 + Data Preparation
@@ -8,13 +8,13 @@
 + Insight
 
 
-# Problem Statement:
+## Problem Statement:
 + Define proper KPIs
 + Create a dashboard for the retention manager reflecting the KPIs
 
-# Data Source:
+## Data Source: [customer churn dataset](https://github.com/Ananya-Foujdar05/PWC-customers-retention-dashboard/blob/main/02%20Churn-Dataset.xlsx)
 
-# Data Preparation:
+## Data Preparation:
 + Data transformation was done in power query editor then loaded dataset into power bi desktop
 
 + Created some measures using DAX that are:
@@ -22,13 +22,13 @@
   - Churned Customer = `COUNTX(FILTER('01 Churn-Dataset' , '01 Churn-Dataset'[Churn] = "Yes") , '01 Churn-Dataset'[customerID])`
   - Churn rate = `'01 Churn-Dataset'[Churned Customer]/'01 Churn-Dataset'[Total Customers]`
  
-# Data Visualization: 
+## Data Visualization: 
 
 ![Customer retention 1](https://github.com/Ananya-Foujdar05/PWC-customers-retention-dashboard/assets/140806083/2c176ec7-783c-4a90-b670-be1ea83b2049)
 
 ![Customer Retention 2](https://github.com/Ananya-Foujdar05/PWC-customers-retention-dashboard/assets/140806083/ea5a0235-914c-4752-89c9-7a5b680eaea9)
 
-# Insights:
+## Insights:
 As we can conclude
 + There are 1869 churned customers which are 26.54% of total customers
 + female customers show a higher churn rate compared to male customers, highlighting the importance of targeted retention strategies.
